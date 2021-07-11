@@ -84,4 +84,4 @@ def test_read_xml(tmpdir):
     p = tmpdir / "anime.xml"
     p.write_text(EXAMPLE, encoding=None)
     df = maltools.read_xml(p)
-    assert df.shape == (2, 24)
+    assert df.shape == (2, 23)
