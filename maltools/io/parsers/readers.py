@@ -37,5 +37,5 @@ def read_xml(filepath):
                 dfs.append(df_entry)
 
     # combine dataframes for separate entries into a single dataframe
-    df = pd.concat(dfs).reset_index()
+    df = pd.concat(dfs).reset_index(drop=True)
     return df
